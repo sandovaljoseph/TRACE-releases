@@ -1,10 +1,12 @@
 # TRACE downloads
 
+**Downloads are temporarily unavailable.** Version 2.0.0 was withdrawn after combined recording and CUDA inference exposed recording queue overflow. Version 2.0.1 is being validated; wait for its installer before installing TRACE.
+
 [Download the latest Windows installer](https://github.com/sandovaljoseph/TRACE-releases/releases/latest).
 
 Run the `.exe` and choose recording support or the inference providers you need. Setup downloads selected components automatically; Python, conda, and a source checkout are not required.
 
-For 2.0.0, the installer is 756 MiB. Selecting all inference providers downloads about 8.2 GiB more; allow about 30 GB of free space during full setup.
+For the planned 2.0.1 Windows installer, allow about 9 GiB of total downloads and 30 GB of free space when selecting all inference providers.
 
 Windows 10 x64 build 19041 or newer and a compatible NVIDIA GPU/driver are required for NVENC recording and CUDA inference. The installer is unsigned and may appear as an unknown publisher in Windows.
 
