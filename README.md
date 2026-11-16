@@ -4,6 +4,8 @@
 
 Run the `.exe` and choose recording support or the inference providers you need. Setup downloads selected components automatically; Python, conda, and a source checkout are not required.
 
+For 2.0.0, the installer is 756 MiB. Selecting all inference providers downloads about 8.2 GiB more; allow about 30 GB of free space during full setup.
+
 Windows 10 x64 build 19041 or newer and a compatible NVIDIA GPU/driver are required for NVENC recording and CUDA inference. The installer is unsigned and may appear as an unknown publisher in Windows.
 
 ## First recording
