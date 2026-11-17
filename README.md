@@ -1,12 +1,10 @@
 # TRACE downloads
 
-**Downloads are temporarily unavailable.** Version 2.0.0 was withdrawn after combined recording and CUDA inference exposed recording queue overflow. Version 2.0.1 is being validated; wait for its installer before installing TRACE.
-
-[Download the latest Windows installer](https://github.com/sandovaljoseph/TRACE-releases/releases/latest).
+[Download TRACE 2.0.1 for Windows](https://github.com/sandovaljoseph/TRACE-releases/releases/download/v2.0.1/TRACE-2.0.1-windows-x64.exe).
 
 Run the `.exe` and choose recording support or the inference providers you need. Setup downloads selected components automatically; Python, conda, and a source checkout are not required.
 
-For the planned 2.0.1 Windows installer, allow about 9 GiB of total downloads and 30 GB of free space when selecting all inference providers.
+The installer is about 756 MiB. Selecting all inference providers downloads another 8.2 GiB; allow about 30 GB of free space during full setup.
 
 Windows 10 x64 build 19041 or newer and a compatible NVIDIA GPU/driver are required for NVENC recording and CUDA inference. The installer is unsigned and may appear as an unknown publisher in Windows.
 
@@ -24,6 +22,7 @@ Open **Live inference** while live view runs. Choose the stack, trained model, a
 
 For GenICam cameras, select the optional industrial camera component in Custom setup and install the manufacturer's GenTL driver separately. Select the driver's `.cti` file in **File → GenICam Drivers**.
 
-Rerunning setup can add or repair components. To remove the installation, use Windows Apps settings or the Start-menu uninstaller.
+Close TRACE before rerunning setup. The same installer can add, repair, or remove providers; deselecting a provider removes its runtime. Keep custom models and other data outside the installer's runtime folders. To remove TRACE, use Windows Apps settings or the Start-menu uninstaller.
 
-This repository hosts release downloads, dependency notices, checksums, and corresponding dependency sources. TRACE is licensed under Apache-2.0; bundled dependencies retain their own licenses.
+[Release files](https://github.com/sandovaljoseph/TRACE-releases/releases/tag/v2.0.1) include checksums, dependency notices, and corresponding dependency sources. TRACE is licensed under Apache-2.0; bundled dependencies retain their own licenses.
+
